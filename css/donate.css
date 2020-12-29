@@ -1,0 +1,142 @@
+* {
+    /* border: 1px black solid; */
+}
+
+.main-content {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(51,153,255,0.99)), url(../images/donate/hamster.jpeg);
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-width: 5px 0 0 0;
+    border-color: white;
+    border-style: solid;
+}
+
+.box {
+    margin: 0 25% 0 25%;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 20px; */
+    overflow: auto;
+}
+
+.box .box-content {
+    text-align: center;
+}
+
+.box-content button {
+    margin-top: 20px;
+    padding: 15px 40px 15px 40px;
+    color: #2C6700;
+    font-weight: bold;
+    background-color: #92CD00;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border-style: double;
+    border-color: #2C6700;
+}
+
+.box-content button:hover {
+    position: relative;
+    transform: translateY(-2px);
+    color: #000;
+    border-color: #000;
+    background-color: #FFCF79;
+    transition: 0.3s ease;
+}
+
+.box p {
+    display: table-cell;
+    /* width: 40%; */
+    padding: 20px 0 20px 20px;
+    font-size: 17px;
+    color: white;
+}
+
+.cropped {
+    object-fit: cover;
+    object-position: center;
+    width: 230px;
+    height: 350px;
+    float: left;
+    /* border-radius: 10px; */
+}
+
+.box-2nd {
+    border-width: 5px 0 0 0;
+    border-style: solid;
+    border-color: white;
+    padding: 20px 0;
+    background-color: #3399FF;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box-2nd h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.images {
+    padding: 0;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.images div {
+    white-space: nowrap;
+    margin: 1px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 30%;
+    padding: 10px;
+    display: inline-block;
+    line-height: 200px;
+    border-radius: 10px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#rect-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/donate/shelter.jpeg);
+}
+
+#rect-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/donate/food.jpeg);
+}
+
+#rect-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/donate/clinic.jpeg);
+}
+
+.box-3rd {
+    border-width: 5px 0 5px 0;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    background-image: linear-gradient(#3399FF,#3366CC);
+    padding: 20px;
+}
+
+.image-container img {
+    object-fit: cover;
+    object-position: center;
+    height: 150px;
+    width: auto;
+    padding: 10px;
+    padding-left: -10px;
+}
+
+
+.box-3rd h2 {
+    color: #fff;
+    font-size: 30px;
+}

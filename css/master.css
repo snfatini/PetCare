@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    /* border: 1px black solid; */
 }
 
 html {
@@ -20,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-header, footer{
+header{
     width: 100%;
     position: fixed;
     background: #3399FF;
@@ -34,9 +33,23 @@ header{
 }
 
 footer{
-    bottom: 0;
+    background: #24478f;
+    color: #fff;
+    padding: 20px;
 }
 
+#copyright {
+    float: left;
+}
+
+#enquiry {
+    float: right;
+}
+
+#enquiry a {
+    color: orange;
+    text-decoration: none;
+}
 
 .logo {
     margin-top: 10px;
@@ -97,7 +110,7 @@ main {
 }
 
 div.parallax:after {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../stray.jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/donate/stray.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -116,128 +129,4 @@ div.parallax:after {
     font-size: 50px;
     padding: 120px 0 60px 15%;
     color: #fff;
-}
-
-.main-content {
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(51,153,255,0.99)), url(../bruh.jpeg);
-    /* height: 100vh; */
-    background-size: cover;
-    background-position: center;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-width: 5px 0 0 0;
-    border-color: white;
-    border-style: solid;
-}
-
-.box {
-    margin: 0 25% 0 25%;
-    padding: 10px 10px 10px 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* border-radius: 20px; */
-    overflow: auto;
-}
-
-.box .box-content {
-    text-align: center;
-}
-
-.box-content button {
-    margin-top: 20px;
-    padding: 15px 40px 15px 40px;
-    color: #2C6700;
-    font-weight: bold;
-    background-color: #92CD00;
-    border-radius: 5px;
-    transition: 0.3s ease;
-    border-style: double;
-    border-color: #2C6700;
-}
-
-.box-content button:hover {
-    position: relative;
-    transform: translateY(-2px);
-    color: #000;
-    border-color: #000;
-    background-color: #FFCF79;
-    transition: 0.3s ease;
-}
-
-.box p {
-    display: table-cell;
-    /* width: 40%; */
-    padding: 20px 0 20px 20px;
-    font-size: 17px;
-    color: white;
-}
-
-.cropped {
-    object-fit: cover;
-    object-position: center;
-    width: 230px;
-    height: 350px;
-    float: left;
-    /* border-radius: 10px; */
-}
-
-.box-2nd {
-    border-width: 5px 0 0 0;
-    border-style: solid;
-    border-color: white;
-    background-color: #3399FF;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.box-2nd h1 {
-    color: #fff;
-    font-size: 45px;
-}
-
-.images img {
-    object-fit: cover;
-    object-position: center;
-    width: 500px;
-    height: 250px;
-    padding: 5px;
-    vertical-align: middle;
-}
-
-.images {
-    padding: 0;
-    /* margin-left: 5%;
-    margin-right: 5%; */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.images div {
-    white-space: nowrap;
-    margin: 1px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    width: 30%;
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 10px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-#rect-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../shelter.jpeg);
-}
-
-#rect-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../food.jpeg);
-}
-
-#rect-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../clinic.jpeg);
 }
