@@ -2,6 +2,11 @@
     /* border: 1px black solid; */
 }
 
+body {
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
 main {
 	width: 100vw;
 	height: 100vh;
@@ -57,7 +62,8 @@ div.parallax:after {
 }
 
 .box {
-    margin: 0 25% 0 25%;
+    margin: 0 auto;
+	width: 600px;
     padding: 10px 10px 10px 10px;
     background-color: rgba(0, 0, 0, 0.5);
     /* border-radius: 20px; */
@@ -82,10 +88,12 @@ div.parallax:after {
 
 .box-content button:hover {
     position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
     transform: translateY(-2px);
-    color: #000;
+    color: white;
     border-color: #000;
-    background-color: #FFCF79;
+    background-color: #2C6700;
     transition: 0.3s ease;
 }
 

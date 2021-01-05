@@ -6,11 +6,9 @@
 }
 
 html {
-    overflow: hidden;
 }
 
 body {
-    padding-bottom: 40px;
     /* position:fixed; */
 }
 
@@ -33,6 +31,7 @@ header{
 }
 
 footer{
+    bottom: 0;
     background: #24478f;
     color: #fff;
     padding: 20px;
@@ -88,4 +87,12 @@ nav a:hover {
 
 nav a.active {
     background-color: #333399;
+}
+
+.hidden {
+    display: none;
+}
+
+.visuallyhidden {
+    opacity: 0;
 }

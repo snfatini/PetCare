@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Donation | Petshop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <h1>PetCare</h1>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="info.html">Info</a>
+                <a href="petshop.html">PetShop</a>
+                <a class="active" href="donation.html">Donate</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="title">Payment</h1>
+        <div class="main-content">
+            <img class="left-image" src="images/payment/cat2.jpg" alt="">
+            <div class="right">
+
+                <div id="mainsub">
+                    <p id="right-title">Select payment method:</p>
+                    <button type="button" class="payment" id="creditdebit">
+                        <img src="images/payment/visa.png" alt="" width="100%">
+                        <img src="images/payment/mastercard.png" alt="" width="100%">
+                        <p>Credit/Debit Card</p>
+                    </button>
+                </div>
+
+                <form id="cdcontent" class="hidden visuallyhidden">
+                    <button class="button-back" type="button" name="button">< Go back</button>
+
+                    <p>Payment information:</p>
+                    <input class="input-name fill-required" type="text" placeholder="Your name on card">
+                    <p class="error error-name hidden" id="error">*Please enter your name</p>
+                    <input class="input-card-number fill-required" placeholder="Enter credit/debit card number" type="tel">
+
+                    <p class="error error-cardnum hidden" id="error">*Please enter your credit/debit card number</p>
+                    <i class="fa fa-cc-visa"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-amex"></i>
+                    <i class="fa fa-cc-jcb"></i>
+                    <i class="fa fa-cc-discover"></i>
+
+                    <input class="input-date fill-required" type="text" placeholder="MM/YY">
+                    <p class="error error-date hidden" id="error2">*Please enter valid expiry date</p>
+                    <input class="input-cvv fill-required" type="text" placeholder="CVV">
+                    <p class="error error-cvv hidden" id="error3">*Please enter valid CVV code </p>
+                    <div style="clear:both;"></div>
+
+                    <p>Enter amount</p>
+                    <input class="donate-amount" type="text" placeholder="Enter amount">
+                    <p class="error error-donate hidden" id="error4">*Please enter valid amount to donate </p>
+                    <br>
+                    <button class="button-pay" type="submit">PAY</button>
+                    <br>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="terms">
+                        <p>I agree to <a href="tnc.html">terms and condition</a> and <a href="#">privacy policy</a></p>
+                    </div>
+
+                    <p class="error error-terms hidden" id="error5">*Please tick this box to continue with the donation. </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">&copy; Copyright 2021. All rights reserved, probably</p>
+        <p id="enquiry">For more enquiry on this matter, <a href="mailto:petshop?subject=feedback">email to us</a></p>
+        <div style="clear: both;"></div>
+    </footer>
+    <script src="js/cleave.js"> </script>
+    <script src="js/payment.js"> </script>
+</body>
+
+</html>

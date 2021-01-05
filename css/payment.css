@@ -1,0 +1,240 @@
+* {
+    /* border: 1px black solid; */
+}
+
+body {
+    color: white;
+    background-color: #333399;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.main-content {
+    margin: 20px auto;
+    background-color: #3366CC;
+    width: 600px;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 90px;
+    color: #fff;
+}
+
+.left-image {
+    object-fit: cover;
+    object-position: center;
+    width: 230px;
+    height: 530px;
+    margin-bottom: -5px; /*For some reason image have a bit margin*/
+}
+
+.right {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: calc(100% - 294px);
+    float: right;
+}
+
+#mainsub {
+    transition: all 0.3s linear;
+}
+
+#right-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.payment {
+    margin: 15px;
+    width: 60%;
+    padding: 10px 0;
+    /* padding: 10px 70px; */
+    /* background-image: linear-gradient(rgba(146, 205, 0, 0.5), rgba(146, 205, 0, 0.5)); */
+    background-color: #92CD00;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.payment img {
+    width: auto;
+    height: 70px;
+
+}
+
+#creditdebit.animate {
+    transition: 0.3s ease;
+    opacity: 0.0;
+    transform: translateX(-40px);
+}
+
+#cdcontent {
+    transition: all 0.5s linear;
+}
+
+#cdcontent p{
+    font-size: 18px;
+    padding: 5px;
+}
+
+#cdcontent input {
+    font-size: 14px;
+    margin: 13px 0;
+    padding: 15px;
+    width: calc(100% - 31px);
+    border-radius: 5px;
+    border-style: hidden;
+    /* width: 100%; */
+    /* transform: translateX(-0%); */
+}
+
+
+#cdcontent .input-date , #cdcontent .input-cvv{
+    width: 37%;
+}
+
+#cdcontent .input-date {
+    float: left;
+}
+
+#cdcontent .input-cvv {
+    float: right;
+}
+
+#cdcontent .donate-amount {
+    width: 40%;
+}
+
+#cdcontent .fa {
+    transition: all 0.3s ease;
+    font-size: 30px;
+    color: #444;
+    transform: translate(260%, -170%);
+    position: absolute;
+    opacity: 0.0;
+}
+
+#cdcontent i.active {
+    opacity: 1.0;
+}
+
+#cdcontent .box-error {
+    border-style: solid;
+    border-color: #f70d1a;
+}
+
+.button-back {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    border-style: none;
+    background-color: transparent;
+    transform: translate(-270%, -70%);
+}
+
+
+
+.button-pay {
+    transition: 0.3s ease;
+    margin-top: 20px;
+    font-weight: bolder;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #2C6700;
+    background-color: #92CD00;
+    padding: 10px 40px;
+}
+
+.button-pay:hover {
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-color: #000;
+    background-color: #2C6700;
+    transform: translateY(-5%);
+}
+
+/* making checkmark nice */
+.checkbox-wrapper {
+    float: left;
+    margin: 10px 0;
+    text-align: left;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* hide the checkmark */
+.checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.checkbox-wrapper:hover input ~ .checkmark {background-color: #ccc;}
+
+.checkbox-wrapper input:checked ~ .checkmark {background-color: #2196F3;}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-wrapper input:checked ~ .checkmark:after {display: block;}
+
+.checkbox-wrapper .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#cdcontent .terms p {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+#cdcontent .terms p a {
+    font-size: inherit;
+    color: #3399FF;
+}
+
+#cdcontent .terms p a:hover {color: white;}
+
+#cdcontent .error{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    font-size: 10px;
+    color: #f70d1a;
+}
+
+#cdcontent #error {transform: translate(5%, -90%);}
+#cdcontent #error2{transform: translate(1%, 470%);}
+#cdcontent #error3{transform: translate(122%, 470%);}
+#cdcontent #error4{transform: translate(36%, -75%);}
+#cdcontent #error5{transform: translate(10%, -40%);}
