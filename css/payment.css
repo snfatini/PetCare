@@ -4,7 +4,10 @@
 
 body {
     color: white;
-    background-color: #333399;
+    /* background-color: #333399; */
+    background-image: linear-gradient(rgba(51,153,255,0.6), rgba(51,153,255,1.0)), url(../img/donate/clinic.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -51,14 +54,17 @@ main {
 }
 
 .payment {
+    transition: 0.3s ease;
     margin: 15px;
     width: 60%;
     padding: 10px 0;
     /* padding: 10px 70px; */
     /* background-image: linear-gradient(rgba(146, 205, 0, 0.5), rgba(146, 205, 0, 0.5)); */
-    background-color: #92CD00;
+    border-style: solid;
     border-radius: 10px;
-    border-style: outset;
+    border-color: #2C6700;
+    background-color: #92CD00;
+    transition: 0.3s
 }
 
 .payment img {
@@ -67,7 +73,14 @@ main {
 
 }
 
-#creditdebit.animate {
+.payment:hover {
+    color: white;
+    width: 80%;
+    border-color: #000;
+    background-color: #2C6700;
+}
+
+.animate {
     transition: 0.3s ease;
     opacity: 0.0;
     transform: translateX(-40px);
@@ -135,11 +148,10 @@ main {
     border-style: none;
     background-color: transparent;
     transform: translate(-270%, -70%);
+    transition: all 0.5s linear;
 }
 
-
-
-.button-pay {
+#cdcontent .button-pay {
     transition: 0.3s ease;
     margin-top: 20px;
     font-weight: bolder;
@@ -147,10 +159,10 @@ main {
     border-radius: 5px;
     border-color: #2C6700;
     background-color: #92CD00;
-    padding: 10px 40px;
+    padding: 10px 70px;
 }
 
-.button-pay:hover {
+#cdcontent .button-pay:hover {
     color: white;
     padding-left: 100px;
     padding-right: 100px;
@@ -160,7 +172,7 @@ main {
 }
 
 /* making checkmark nice */
-.checkbox-wrapper {
+#cdcontent .checkbox-wrapper {
     float: left;
     margin: 10px 0;
     text-align: left;
@@ -172,7 +184,7 @@ main {
 }
 
 /* hide the checkmark */
-.checkbox-wrapper input {
+#cdcontent .checkbox-wrapper input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -180,7 +192,7 @@ main {
     width: 0;
 }
 
-.checkmark {
+#cdcontent .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -189,19 +201,19 @@ main {
     background-color: #eee;
 }
 
-.checkbox-wrapper:hover input ~ .checkmark {background-color: #ccc;}
+#cdcontent .checkbox-wrapper:hover input ~ .checkmark {background-color: #ccc;}
 
-.checkbox-wrapper input:checked ~ .checkmark {background-color: #2196F3;}
+#cdcontent .checkbox-wrapper input:checked ~ .checkmark {background-color: #2196F3;}
 
-.checkmark:after {
+#cdcontent .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.checkbox-wrapper input:checked ~ .checkmark:after {display: block;}
+#cdcontent .checkbox-wrapper input:checked ~ .checkmark:after {display: block;}
 
-.checkbox-wrapper .checkmark:after {
+#cdcontent .checkbox-wrapper .checkmark:after {
     left: 5px;
     top: 0px;
     width: 5px;
@@ -218,10 +230,7 @@ main {
     font-size: 12px;
 }
 
-#cdcontent .terms p a {
-    font-size: inherit;
-    color: #3399FF;
-}
+#cdcontent .terms p a {font-size: inherit;}
 
 #cdcontent .terms p a:hover {color: white;}
 
@@ -238,3 +247,37 @@ main {
 #cdcontent #error3{transform: translate(122%, 470%);}
 #cdcontent #error4{transform: translate(36%, -75%);}
 #cdcontent #error5{transform: translate(10%, -40%);}
+
+#ppcontent {
+    transition: all 0.5s linear;
+}
+
+#ppcontent p{
+    font-size: 18px;
+    padding: 5px;
+}
+
+#ppcontent .ps {
+    font-size: 12px;
+}
+
+#ppcontent .ps a {
+    font-size: inherit;
+}
+
+#ppcontent .ps a:hover {color: white;}
+
+#descriptionError, #priceLabelError, #invoiceidError {
+    visibility: hidden;
+    color: red;
+    text-align: center;
+}
+
+#smart-button-container input {
+    font-size: 14px;
+    margin: 13px 0;
+    padding: 15px;
+    width: calc(100% - 31px);
+    border-radius: 5px;
+    border-style: hidden;
+}

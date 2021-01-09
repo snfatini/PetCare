@@ -27,7 +27,7 @@ main {
 }
 
 div.parallax:after {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/donate/stray.jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/donate/stray.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -49,7 +49,7 @@ div.parallax:after {
 }
 
 .main-content {
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(51,153,255,0.99)), url(../images/donate/hamster.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(51,153,255,0.99)), url(../img/donate/hamster.jpeg);
     /* height: 100vh; */
     background-size: cover;
     background-position: center;
@@ -155,15 +155,15 @@ div.parallax:after {
 }
 
 #rect-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/donate/shelter.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/donate/shelter.jpeg);
 }
 
 #rect-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/donate/food.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/donate/food.jpeg);
 }
 
 #rect-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/donate/clinic.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/donate/clinic.jpeg);
 }
 
 .box-3rd {

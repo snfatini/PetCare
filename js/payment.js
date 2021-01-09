@@ -1,3 +1,101 @@
+function initPayPalButton() {
+    var description = document.querySelector('#smart-button-container #description');
+    var amount = document.querySelector('#smart-button-container #amount');
+    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+    var priceError = document.querySelector('#smart-button-container #priceLabelError');
+    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+    var elArr = [description, amount];
+
+    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+        invoiceidDiv.style.display = "block";
+    }
+
+    var purchase_units = [];
+    purchase_units[0] = {};
+    purchase_units[0].amount = {};
+
+    function validate(event) {
+        return event.value.length > 0;
+    }
+
+    paypal.Buttons({
+        style: {
+            color: 'gold',
+            shape: 'rect',
+            label: 'paypal',
+            layout: 'horizontal',
+
+        },
+
+        onInit: function(data, actions) {
+            actions.disable();
+
+            if (invoiceidDiv.style.display === "block") {
+                elArr.push(invoiceid);
+            }
+
+            elArr.forEach(function(item) {
+                item.addEventListener('keyup', function(event) {
+                    var result = elArr.every(validate);
+                    if (result) {
+                        actions.enable();
+                    } else {
+                        actions.disable();
+                    }
+                });
+            });
+        },
+
+        onClick: function() {
+            if (description.value.length < 1) {
+                descriptionError.style.visibility = "visible";
+            } else {
+                descriptionError.style.visibility = "hidden";
+            }
+
+            if (amount.value.length < 1) {
+                priceError.style.visibility = "visible";
+            } else {
+                priceError.style.visibility = "hidden";
+            }
+
+            if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+                invoiceidError.style.visibility = "visible";
+            } else {
+                invoiceidError.style.visibility = "hidden";
+            }
+
+            purchase_units[0].description = description.value;
+            purchase_units[0].amount.value = amount.value;
+
+            if (invoiceid.value !== '') {
+                purchase_units[0].invoice_id = invoiceid.value;
+            }
+        },
+
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: purchase_units,
+            });
+        },
+
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        },
+
+        onError: function(err) {
+            console.log(err);
+        }
+    }).render('#paypal-button-container');
+}
+
+initPayPalButton();
+
 new Cleave('.donate-amount', {
     prefix: 'RM ',
     numeral: true,
@@ -52,7 +150,6 @@ var btnPay = document.querySelector('.button-pay'),
 const form = document.querySelector('form');
 
 form.onsubmit = function(e) {
-    e.preventDefault();
     console.log(typeCard.properties.creditCardType);
     if (cardName.value === ""){
         cardName.classList.add('box-error');
@@ -110,52 +207,84 @@ form.onsubmit = function(e) {
 
 // Transition between select payment method
 
-let box = document.getElementById('mainsub'),
-    box2 = document.getElementById('cdcontent'),
+let boxMain = document.getElementById('mainsub'),
+    boxcc = document.getElementById('cdcontent'),
+    boxpp = document.getElementById('ppcontent')
     btn1 = document.getElementById('creditdebit'),
-    btn2 = document.querySelector('.button-back');
+    btn2 = document.getElementById('mypaypal'),
+    btnBack = document.querySelector('.button-back');
 
 btn1.addEventListener('click', function() {
     btn1.classList.add('animate');
 
-    if (box.classList.contains('hidden')) {
-        box.classList.remove('hidden');
+    boxMain.classList.add('visuallyhidden');
+    boxMain.addEventListener('transitionend', function(e) {
+        boxMain.classList.add('hidden');
+        boxcc.classList.remove('hidden');
+        btnBack.classList.remove('hidden');
         setTimeout(function() {
-            box.classList.remove('visuallyhidden');
+            boxcc.classList.remove('visuallyhidden');
+            btnBack.classList.remove('visuallyhidden');
         }, 20);
-    } else {
-        box.classList.add('visuallyhidden');
-        box.addEventListener('transitionend', function(e) {
-            box.classList.add('hidden');
-            box2.classList.remove('hidden');
-            setTimeout(function() {
-                box2.classList.remove('visuallyhidden');
-            }, 20);
-        }, {
-            capture: false,
-            once: true,
-            passive: false
-        });
-    }
+    }, {
+        capture: false,
+        once: true,
+        passive: false
+    });
 
 }, false);
 
+// initPayPalButton();
 btn2.addEventListener('click', function() {
+    btn2.classList.add('animate');
 
-    if (box2.classList.contains('hidden')) {
-        box2.classList.remove('hidden');
+    boxMain.classList.add('visuallyhidden');
+    boxMain.addEventListener('transitionend', function(e) {
+        boxMain.classList.add('hidden');
+        boxpp.classList.remove('hidden');
+        btnBack.classList.remove('hidden');
         setTimeout(function() {
-            box2.classList.remove('visuallyhidden');
+            boxpp.classList.remove('visuallyhidden');
+            btnBack.classList.remove('visuallyhidden');
         }, 20);
-    } else {
-        box2.classList.add('visuallyhidden');
-        box2.addEventListener('transitionend', function(e) {
-            box2.classList.add('hidden');
-            box.classList.remove('hidden');
+    }, {
+        capture: false,
+        once: true,
+        passive: false
+    });
+
+}, false);
+
+
+btnBack.addEventListener('click', function(e) {
+
+    if (boxcc.classList.contains('hidden')){
+        boxpp.classList.add('visuallyhidden');
+        btnBack.classList.add('visuallyhidden');
+        boxpp.addEventListener('transitionend', function(e) {
+            boxpp.classList.add('hidden');
+            btnBack.classList.add('hidden');
+            boxMain.classList.remove('hidden');
             setTimeout(function() {
-                box.classList.remove('visuallyhidden');
-                btn1.classList.remove('animate');
+                boxMain.classList.remove('visuallyhidden');
+                btn2.classList.remove('animate');
             }, 20);
+        }, {
+            capture: false,
+            once: true,
+            passive: false
+        });
+    } else if (boxpp.classList.contains('hidden')) {
+        boxcc.classList.add('visuallyhidden');
+        btnBack.classList.add('visuallyhidden');
+        boxcc.addEventListener('transitionend', function(e) {
+            boxcc.classList.add('hidden');
+            btnBack.classList.add('hidden');
+            boxMain.classList.remove('hidden');
+            setTimeout(function() {
+                boxMain.classList.remove('visuallyhidden');
+                btn1.classList.remove('animate');
+            }, 200);
         }, {
             capture: false,
             once: true,
@@ -163,4 +292,4 @@ btn2.addEventListener('click', function() {
         });
     }
 
-}, false);
+});

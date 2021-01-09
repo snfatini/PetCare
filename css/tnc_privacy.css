@@ -1,0 +1,25 @@
+* {
+    /* border: 1px black solid; */
+}
+
+main {
+    color: white;
+    background-color: #333399;
+    padding: 80px 10% 40px 10%;
+}
+
+main p {margin: 10px 0;}
+
+main h2 {text-align: center;}
+
+main h2 strong {
+    font-size: 30px;
+}
+
+main h3 strong {
+    font-size: 20px;
+}
+
+main ul {margin-left: 40px;}
+
+main a {color: #3399FF;}
