@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact | Petshop</title>
+   
+    <style media="screen">
+          .content1{
+           width:40%;
+           margin: 0 auto;
+           padding:40px 20px 40px 20px;
+         background-color:lightblue;
+         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          margin-bottom:100px;
+           margin-top:50px;
+            border-radius: 25px;
+      }
+           .content2{
+           width:99%;
+            margin: 0 auto;
+            padding:40px 20px 80px 20px;
+          background-color:lightblue;
+        margin-bottom:100px;
+       border-radius: 20px;
+      }
+   
+      ul{
+        list-style-type: none;
+        margin-top:10px;
+        margin-right: 10px;
+      }
+
+      li {
+        float:left;
+        font-size:20px;
+      }
+      li a {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      nav a:hover{
+        background-color: #3366CC;
+        transition: 0.3s ease;
+        padding-top:18px;
+        padding-bottom: 17px;
+        color:white;
+      }
+      nav a{
+        color:white;
+      }
+      nav{
+        float : right;
+        margin-top:-73px;
+      }
+      .intro{
+        padding:0px;
+        padding-top:5px;
+        height:50px;
+        width:100%;
+        background-color:lightblue;
+        position:fixed;
+        color: white;
+      }
+
+    
+      button{
+        border:none;
+        background-color: #3355FF;
+        color:white;
+        padding: 10px 30px;
+      }
+     
+      .intro img{
+        border-radius: 100%;
+        width : 45px;
+        float: left;
+        margin-left: 100px;
+        border-style: none;
+      }
+      footer{
+          bottom: 0;
+          background: #24478f;
+          color: #fff;
+          padding: 40px;
+          width: 0 auto;
+      }
+      #copyright {
+          float: left;
+      }
+
+      #enquiry {
+          float: right;
+      }
+
+      #enquiry a {
+          color: orange;
+          text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+   <div style="background-image:url('pexels-pixabay-45170.jpg');">
+    <div class="intro">
+      <img src="images/logo.png" alt="">
+      <h1 style="padding:10px;margin-top:-6px;">PetCare</h1>
+      <nav>
+        <ul>
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#Info">Info</a></li>
+          <li> <a href="#shop">Pet Shop</a></li>
+          <li> <a href="donation.html">Donate</a></li>
+          <li> <a href="contact.html" style="background-color:#333399;color:white;padding:12px;padding-top:18px;padding-bottom:17px;">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <hr style="height:2px; background-color:black;border-width:0px;margin-top:-25px;">
+    </div><br><br><br><br>
+    
+   
+
+   <div style="margin:40px auto;width:500px;color:black;font-family:verdana;font-size:350%;"><b>
+                 Contact Us
+                 </b> </div><br><br>
+  
+        
+      <div class ="content1">
+          <h2 style="margin:0 auto;width:500px;color:#000080;font-family:Times New Roman;font-size:200%;">Have any Question Or Comments?</h2>
+      <h4 style="margin:0 auto;width:300px;color:blue;font-family:Times New Roman;font-size:150%">We want to hear</h4>
+<br><br>
+              <form style="margin:0 auto;width:300px;color:;font-family:Times New Roman;">
+               <label for="fname">Full Name</label>
+            <input type ="text" id="fname"
+            name="fname"><br><br>
+           <form action ="/action_page.phd">
+           <label for="fname">EMAIL</label>
+          <input type ="text" id="fname"
+            name="fname"><br><br>
+           <form action ="/action_page.phd">
+           <label for="fname">PHONE NO</label> 
+         
+            <input type ="text" id="fname"
+           name="fname"><br><br>
+            <textarea rows ="8" cols ="50"
+              name="comment" form ="usrform">
+           Drop Your Message here....</textarea>
+            <br><br><br>
+             <button type ="button"style="float:left;margin:20px;margin-top:-20px; background-color:grey;">Send Message</button>
+             
+               </form>
+                </div><br>
+             <div class="content2">
+             <div style="float:left;color:#000080;font-family:verdana;font-size:200%"><b>
+            Via Email</b></div>
+  
+            <div style="float:right;color:#000080;font-family:verdana;font-size:200%;"><b>
+           OUR SOCIAL</b>
+            </div>
+            <div style="margin:0 auto;width:300px;color:#000080;font-family:verdana;font-size:200%;"><b>
+             Via whatsapp
+              </b></div>
+             <br>
+             <div style="float:left;color:black;font-family:Times New Roman;font-size:normal;">
+            <button type ="button"style="center:center;margin:10px;font-size:100%;margin-top:0px; background-color:lightblue;">Petcare@gmail.com</button>
+  
+   
+              <br>
+            <button type ="button"style="center:center;margin:10px;font-size:100%;margin-top:0px; background-color:lightblue;">Petcare123@gmail.com</button>
+  
+   
+            </div>
+            <div style="float:right;color:black;font-family:Times New Roman;font-size:normal;">
+   
+            <button type ="button"style="right:center;margin:10px;font-size:100%;margin-top:0px; background-color:lightblue;">Instagram:  Petcare1</button>
+                  <br><br>
+                  
+            <button type ="button"style="right:center;margin:10px;font-size:100%;margin-top:0px; background-color:lightblue;">Facebook:  petcare page</button>
+                  <br><br>
+            
+                  
+                  </div>
+            <div style="margin:0 auto;width:200px;color:black;font-family:Times New Roman;font-size:normal;font-size:100%;">
+             
+           
+              <button type ="button"style="float:center;margin:10px;font-size:100%;margin-top:0px; background-color:lightblue;">+6012347548</button>
+  
+                 <br><br>
+            
+             <button type ="button"style="float:center;margin:10px;margin-top:-20px;font-size:100%; background-color:lightblue;">+601234567</button>
+  
+             </div>
+             <br><br><br><br><br><br><br>
+           <footer>
+           <p id="copyright">&copy; Copyright 2021. All rights reserved, probably</p>
+           <p id="enquiry">For more enquiry on this matter, <a href="mailto:petshop?subject=feedback">email to us</a></p>
+           <div style="clear: both;"></div>
+           </footer>
+
+  </body>
+</html>
+      
+  
+   
+    
+ 
+</body>
+</html>
