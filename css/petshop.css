@@ -72,7 +72,7 @@ body{
   color: white;
 }
 
-.foodrow{
+.row{
   margin-top: 50px;
   content: "";
   display: table;
@@ -102,7 +102,7 @@ body{
   font-size: 22px;
 }
 
-.foodrow button {
+.row button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -114,7 +114,7 @@ body{
   font-size: 18px;
 }
 
-.foodrow button:hover {
+.row button:hover {
   opacity: 0.7;
 }
 
