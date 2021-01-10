@@ -93,7 +93,7 @@ a .btn{
 
 #intro{
   float: left;
-  width: 30%;
+  width: 33%;
   padding: 2%;
   text-align: center;
   font-size: 18px;
@@ -107,7 +107,7 @@ a .btn{
 
 #quote{
   float: right;
-  width: 30%;
+  width: 27%;
   padding: 2%;
   text-align: center;
   font-size: 20px;
@@ -135,7 +135,7 @@ a .btn{
 
 .column .content{
   position: absolute;
-  top:161.5%;
+  top:157.5%;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
