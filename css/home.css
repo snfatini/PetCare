@@ -7,19 +7,6 @@ body{
   margin: 0 auto;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    background: #3399FF;
-    padding: 0;
-    color: #fff;
-    z-index: 1000;
-    top: 0;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-
-}
-
 .head {
   position: relative;
   text-align: center;
@@ -146,13 +133,14 @@ hr{
 
 .column .content{
   position: absolute;
-  top:147%;
+  top:155.5%;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   width: 15.5%;
   padding: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 25px 25px;
 }
 
 h1 {
