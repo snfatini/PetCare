@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/5cfea6fc65.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <style media="screen">
+      html{
+        scroll-behavior: smooth;
+      }
+      .wholeContent{
+        width:80%;
+        margin: 0 auto;
+
+      }
+      body{
+        margin: 0 auto;
+        max-width :none;
+        background-image:
+        linear-gradient(to bottom, rgba(20, 60, 90, 0.4), rgba(0, 0, 0 , 2.0)),
+        url('img/hamster7back.jpg');
+        background-blend-mode: darken;
+        background-size: cover;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+      }
+      i {
+        color: black;
+        float:left;
+        font-size:30px;
+        width:50%;
+        padding-left:20px;
+        padding-top: 5px;
+      }
+      .intro ul{
+        list-style-type: none;
+        margin-top:10px;
+        margin-right: 10px;
+      }
+
+      .intro li {
+        float:left;
+        font-size: 20px;
+      }
+      li a {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top:20px;
+        padding-bottom: 23px
+      }
+      .intro nav a:hover{
+        background-color: #3366CC;
+        color:white;
+        transition: 0.4s;
+      }
+      .intro nav{
+        float : right;
+        margin-top:-73px;
+        margin-right: 30px;
+      }
+      .intro nav a {
+        color:white;
+      }
+      .intro{
+        padding-top:10px;
+        height:55px;
+        width:100%;
+        background-color:#3399FE;
+        position:fixed;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .hamsterInfo{
+        color: black;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        float:right;
+        border-radius: 25px;
+        width:20%;
+        height:290px;
+        background-color:white;
+        padding: 20px;
+        padding-bottom:50px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top:50px;
+        margin-bottom: 20px;
+        font-family: "Courier New",monospace;
+      }
+      .hamsterInfo img{
+        width:90px;
+        height:70px;
+        border-radius:50px;
+        float:right;
+        margin:10px;
+        margin-right:20px;
+        margin-top:30px;
+
+      }
+      .wholeContent p{
+        font-size:20px;
+        padding-left: 20px;
+      }
+      .wholeContent h2{
+        padding-left: 20px;
+      }
+      .fotorama{
+        padding:5px;
+        display:block;
+        width:50%;
+        margin: 0 auto;
+      }
+      button{
+        border:none;
+        background-color: #333399;
+        color:white;
+        padding: 10px 20px;
+      }
+      button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: white;
+        color:#555555;
+        transition: 0.3s;
+      }
+      .sidenav{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        float:left;
+        padding:10px;
+        margin-top: 70px;
+        font-size: 20px;
+        background-color: #333399;
+        position:fixed;
+        border-top-right-radius:10px;
+        border-bottom-right-radius: 10px;
+      }
+      .sidenav a {
+        text-decoration: none;
+        color:white;
+      }
+      footer{
+          bottom: 0;
+          background: #24478f;
+          color: #fff;
+          padding: 20px;
+      }
+      #copyright {
+          float: left;
+      }
+
+      #enquiry {
+          float: right;
+      }
+
+      #enquiry a {
+          color: orange;
+          text-decoration: none;
+      }
+      .intro img{
+        border-radius: 50%;
+        width : 45px;
+        float: left;
+        margin-left: 100px;
+        border-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <img src="img/logo.png" alt="">
+      <h1 style="padding:10px;margin-top:-6px;">PetCare</h1>
+      <nav>
+        <ul>
+          <li> <a href="home.html">Home</a></li>
+          <li> <a href="info.html" style="background-color:#333399;color:white;padding:12px;padding-top:20px;padding-bottom:23px;padding-left: 30px;padding-right:30px;">Info</a></li>
+          <li> <a href="petshop.html">Pet Shop</a></li>
+          <li> <a href="donation.html">Donate</a></li>
+          <li> <a href="contact.html">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <hr style="height:5px; background-color:white;border-width:0px;margin-top:-17px;">
+    </div>
+    <br><br>
+    <div class="sidenav">
+      <nav>
+        <a href="#hamster">About Hamster</a><br><br>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </div>
+    <div class="wholeContent">
+
+    <h1 id="hamster" style="text-align:center;
+    font-size:60px;
+    padding-top:40px;
+    font-family:"Brush Script MT", cursive;"> Hamster</h1>
+    <div class="hamsterInfo">
+      <img src="img/hamsterinfo.jpg" alt="dog pic">
+      <ul style="list-style-type:none;padding:10px;">
+        <li>COMMON NAME: Hamster</li><br>
+        <li>SCIENTIFIC NAME: Cricetinae</li><br>
+        <li>DIET : Omnivore</li><br>
+        <li>TYPE : Mammals (rodents)</li><br>
+        <li>SIZE : 2 to 4 inches</li><br>
+        <li>WEIGHT : 110 to 200 grams</li>
+      </ul>
+    </div>
+    <br>
+    <p>Hamsters are tiny mice, and are commonly kept as house pets. They are distinguishable from other rats because of their short tails, stubby legs and little feet.
+      Hamsters have several different shades, including black, gray, brown, white, purple, red or a combination of different colours.</p>
+    <h2><u>Size</u></h2>
+    <p>With 24 species of hamsters, these animals have a wide range of sizes. The European breed can grow as large as 13.4 inches (34 centimeters) long and is one of the largest breeds of hamsters.
+      The dwarf hamster lives up to his reputation. These small hamsters are about 2 to 4 inches (5.5 to 10.5 cm) tall.
+      The most famous pet hamster, the Syrian hamster, also known as teddy bear hamster or golden hamster, is normally around 6 inches (15.24 cm) long.</p>
+
+    <h2><u>Hamster Habits</u></h2>
+    <p>Hamsters are nocturnal, according to the ASPCA, which means they prefer to nap through the day. They dig burrows in the wild, which are a network of holes, to live and breed in.
+      Hamsters are also going to store food in their burrows. Living underground makes wild hamsters calm in hot weather.</p>
+
+    <p>Some hamsters are very friendly, while others are alone.
+      The Syrian hamster, for example, doesn't like being with other hamsters.
+      They are very aggressive and can never be housed in a cage with other hamsters.
+      It's going to bite the other hamster, and maybe even injure it.
+      Dwarf hamsters, on the other hand, are friendly and want to see a mate in the area.</p>
+
+    <p>Wild hamsters will hibernate if the temperature is cool enough. Hamsters are going to wake up from hibernation regularly to feed. If there is not enough food to store, the hamsters will wait to hibernate until their surplus is to their taste.</p>
+
+    <h2><u>Diet</u></h2>
+    <p>Hamsters prefer to eat peas, wheat, nuts, cracked maize, berries and vegetables. Wild hamsters are also eating spiders, snakes, lizards and other small creatures.
+      According to the Canadian Union of Human Cultures, the captive hamster diet should be at least 16% protein and 5% fat.</p>
+    <p>Hamsters' name comes from the German word “hamstern,” which means “hoard.” This is a very apt way to describe how hamsters eat. They have pouches in their cheeks that they stuff with food.
+      Then, they will carry their hoard back to their colony so they can eat it later.
+      Pet hamsters will often store food under their cage bedding.</p>
+
+    <h2><u>Facts</u></h2>
+    <p>Hamsters are generally the best house dogs since they are friendly and easy to take care of. They're going to bite when frightened or scared, though. They're even going to bite while they're awake during their night.
+      Since they sleep during the day and people are up during the day, it means that biting is more possible.</p>
+    <p>Hamsters' eyesight is very bad. Their scent glands secrete a readily noticeable fragrance on their backs. They leave a trail of smell and navigate their way through, rubbing their backs against objects.
+      When the hamster has to navigate their way back home, they'll use this fragrance trail as a guide.</p>
+
+    <br><br><br>
+    <h1 id="gallery" style="text-align:center;">Gallery</h1>
+    <div class="fotorama" data-loop="true" data-nav="thumbs">
+      <img src="img/hamster2.jpg" >
+      <img src="img/hamster4.jpg">
+      <img src="img/hamster3.jpeg">
+      <img src="img/hamster5.jpg">
+      <img src="img/hamster6.jpg">
+      <img src="img/hamster7.jpg">
+      <img src="img/hamster8.jpg">
+      <img src="img/hamster9.jpg">
+      <img src="img/hamster10.jpg">
+      <img src="img/hamster11.jpg">
+      <img src="img/hamster12.jpg">
+    </div>
+    <br>
+    <button type="button" name="nav cat" onclick="document.location='cats.html'"> Read about cats</button>
+    <button type="button" name="nav cat" onclick="document.location='dogs.html'" style="float:right;"> Read about dogs</button>
+
+  </div>
+
+  <br>
+  <hr style="height:3px;background-color:white;margin-bottom:0px;">
+  <footer>
+      <p id="copyright">&copy; Copyright 2021. All rights reserved, probably</p>
+      <p id="enquiry">For more enquiry on this matter, <a href="mailto:petshop?subject=feedback">email to us</a></p>
+      <div style="clear: both;"></div>
+  </footer>
+  </body>
+</html>
