@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/petshop.css">
+    <title>PetShop | PetCare</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/petshop.css">
+    <script src="js/petshop.js" charset="utf-8" async></script>
   </head>
   <body>
     <header>
@@ -31,225 +32,248 @@
     <div class="title">Pet Shop</div>
   </div>
 
-  <div class="sidenav">
-    <button class="dropdown-btn">Food</button>
-    <div class="dropdown-container">
-      <a href="#catfood">Cat</a>
-      <a href="#dogfood">Dog</a>
-      <a href="#hamsterfood">Hamster</a>
-    </div>
+  <section>
+      <div class="sidenav">
+          <button class="dropdown-btn">Food</button>
+          <div class="dropdown-container">
+              <a href="#catfood">Cat</a>
+              <a href="#dogfood">Dog</a>
+              <a href="#hamsterfood">Hamster</a>
+          </div>
 
-    <button class="dropdown-btn">House</button>
-    <div class="dropdown-container">
-      <a href="#cathouse">Cat</a>
-      <a href="#doghouse">Dog</a>
-      <a href="#hamsterhouse">Hamster</a>
-    </div>
+          <button class="dropdown-btn">House</button>
+          <div class="dropdown-container">
+              <a href="#cathouse">Cat</a>
+              <a href="#doghouse">Dog</a>
+              <a href="#hamsterhouse">Hamster</a>
+          </div>
 
-  </div>
+      </div>
+
+      <div id="cart">
+
+          <h2>CART</h2>
+          <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+              <div class="cart-items">
+                  <!-- items will add here -->
+              </div>
+          <div class="cart-total">
+              <strong class="cart-total-title">Total</strong>
+              <span class="cart-total-price">RM 0</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+      </div>
+  </section>
+
 
   <div class="row" id="catfood">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/whiskas.png" alt="whiskas" style="width:100%">
-      <h3>Whiskas Adult 1+ <br>(1.2 Kg)</h3>
-      <p class="price">RM 13.99</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Whiskas Adult 1+ <br>(1.2 Kg)</h3>
+      <p class="shop-item-price">RM 13.99</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/canwhiskas.jpg" alt="canwhiskas" style="width:100%">
-      <h3>Whiskas Adult 1+ <br>(400 g)</h3>
-      <p class="price">RM 4.15</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Whiskas Adult 1+ <br>(400 g)</h3>
+      <p class="shop-item-price">RM 4.15</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/canfriskies.jpg" alt="canfriskies" style="width:100%">
-      <h3>PURINA Friskies<br>(350 g)</h3>
-      <p class="price">RM 7.49</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">PURINA Friskies<br>(350 g)</h3>
+      <p class="shop-item-price">RM 7.49</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/friskies.jpg" alt="friskies" style="width:100%">
-      <h3>PURINA Friskies<br>(10 Kg)</h3>
-      <p class="price">RM 70.49</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">PURINA Friskies<br>(10 Kg)</h3>
+      <p class="shop-item-price">RM 70.49</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/kennel.jpg" alt="kennel" style="width:100%">
-      <h3>KENNEL Fish Chunks<br>(170 g)</h3>
-      <p class="price">RM 5.40</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">KENNEL Fish Chunks<br>(170 g)</h3>
+      <p class="shop-item-price">RM 5.40</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/smartheart.jpg" alt="smartheart" style="width:100%">
-      <h3>SmaerHeart Mackerel<br>(1 Kg)</h3>
-      <p class="price">RM 13.99</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">SmaerHeart Mackerel<br>(1 Kg)</h3>
+      <p class="shop-item-price">RM 13.99</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row" id="dogfood">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/cesar.jpg" alt="cesar" style="width:100%">
-      <h3>Cesar Filet Mignon<br>Flavour (2.3 Kg)</h3>
-      <p class="price">RM 17.99</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Cesar Filet Mignon<br>Flavour (2.3 Kg)</h3>
+      <p class="shop-item-price">RM 17.99</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/harringtons.jpg" alt="harringtons" style="width:100%">
-      <h3>Harringtons Adult<br>(2 Kg)</h3>
-      <p class="price">RM 34.15</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Harringtons Adult<br>(2 Kg)</h3>
+      <p class="shop-item-price">RM 34.15</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/nutrish.jpeg" alt="nutrish" style="width:100%">
-      <h3>Nutrish Premium<br>(18 Kg)</h3>
-      <p class="price">RM 107.49</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Nutrish Premium<br>(18 Kg)</h3>
+      <p class="shop-item-price">RM 107.49</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/pedigree.jpg" alt="pedigree" style="width:100%">
-      <h3>Pedigree (Adult)<br>(2.6 Kg)</h3>
-      <p class="price">RM 54.19</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Pedigree (Adult)<br>(2.6 Kg)</h3>
+      <p class="shop-item-price">RM 54.19</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/purina.jpg" alt="purina" style="width:100%">
-      <h3>PURINA Beneful<br>(1.6 Kg)</h3>
-      <p class="price">RM 19.10</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">PURINA Beneful<br>(1.6 Kg)</h3>
+      <p class="shop-item-price">RM 19.10</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/sainsbury.jpg" alt="sainsbury" style="width:100%">
-      <h3>Sainsbury's Complete Nutrition (5 Kg)</h3>
-      <p class="price">RM 67.99</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Sainsbury's Complete Nutrition (5 Kg)</h3>
+      <p class="shop-item-price">RM 67.99</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row" id="hamsterfood">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/kaytee.jpg" alt="kaytee" style="width:100%">
-      <h3>KAYTEE FortiDiet<br>(1.36 Kg)</h3>
-      <p class="price">RM 12.79</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">KAYTEE FortiDiet<br>(1.36 Kg)</h3>
+      <p class="shop-item-price">RM 12.79</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/oxbow.jpg" alt="oxbow" style="width:100%">
-      <h3>OXBOW Hamster and Gerbil Food (454 g)</h3>
-      <p class="price">RM 4.12</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">OXBOW Hamster and Gerbil Food (454 g)</h3>
+      <p class="shop-item-price">RM 4.12</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/selective.jpg" alt="selective" style="width:100%">
-      <h3>SELECTIVE Complete Hamster Food (350 g)</h3>
-      <p class="price">RM 8.29</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">SELECTIVE Complete Hamster Food (350 g)</h3>
+      <p class="shop-item-price">RM 8.29</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/sunburst.jpg" alt="sunburst" style="width:100%">
-      <h3>Sunburst Gourmet Blend (1.13 Kg)</h3>
-      <p class="price">RM 82.90</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Sunburst Gourmet Blend (1.13 Kg)</h3>
+      <p class="shop-item-price">RM 82.90</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/sunseed.jpg" alt="sunseed" style="width:100%">
-      <h3>SUNSEED Dwarf Hamster Food (907 g)</h3>
-      <p class="price">RM 39.50</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">SUNSEED Dwarf Hamster Food (907 g)</h3>
+      <p class="shop-item-price">RM 39.50</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/cathouse.jpg" alt="cathouse 1" id="cathouse" style="width:100%">
-      <h3>BBVILLA Rectangle Wooden Cat House</h3>
-      <p class="price">RM 129.90</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">BBVILLA Rectangle Wooden Cat House</h3>
+      <p class="shop-item-price">RM 129.90</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/cathouse1.jpg" alt="cathouse 2" style="width:100%">
-      <h3>Polygon Cardboard Cat House</h3>
-      <p class="price">RM 72.80</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Polygon Cardboard Cat House</h3>
+      <p class="shop-item-price">RM 72.80</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/cathouse2.jpg" alt="cathouse 3" style="width:100%">
-      <h3>K&H Manufacturing Outdoor Cat House</h3>
-      <p class="price">RM 97.50</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">K&H Manufacturing Outdoor Cat House</h3>
+      <p class="shop-item-price">RM 97.50</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/cathouse3.jpg" alt="cathouse 4" id="cathouse" style="width:100%">
-      <h3>Perfect Pet Cube Cat House</h3>
-      <p class="price">RM 59.90</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Perfect Pet Cube Cat House</h3>
+      <p class="shop-item-price">RM 59.90</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row" id="doghouse">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/doghouse.jpg" alt="doghouse 1" style="width:100%">
-      <h3>Wooden Dog<br>House</h3>
-      <p class="price">RM 135.80</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Wooden Dog<br>House</h3>
+      <p class="shop-item-price">RM 135.80</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/doghouse1.jpg" alt="doghouse 2" style="width:100%">
-      <h3>Foldable Dog House + Blanket</h3>
-      <p class="price">RM 64.95</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Foldable Dog House + Blanket</h3>
+      <p class="shop-item-price">RM 64.95</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column" id="hamsterhouse">
+    <div class="column shop-item" id="hamsterhouse">
     <img src="img/petshop/hamsterhouse.jpg" alt="hamsterhouse 1" id="cathouse" style="width:100%">
-      <h3>Dwarf Hamster Cage (Yellow)</h3>
-      <p class="price">RM 51.40</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Dwarf Hamster Cage (Yellow)</h3>
+      <p class="shop-item-price">RM 51.40</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/hamsterhouse1.jpg" alt="hamsterhouse 2" style="width:100%">
-      <h3>2 Layer Pets<br>Hamster Cage</h3>
-      <p class="price">RM 32.80</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">2 Layer Pets<br>Hamster Cage</h3>
+      <p class="shop-item-price">RM 32.80</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
 
-    <div class="column">
+    <div class="column shop-item">
     <img src="img/petshop/hamsterhouse2.jpg" alt="hamsterhouse 3" style="width:100%">
-      <h3>Kathson Wooden Hamster House</h3>
-      <p class="price">RM 80.15</p>
-      <p><button>Add to Cart</button></p>
+      <h3 class="shop-item-title">Kathson Wooden Hamster House</h3>
+      <p class="shop-item-price">RM 80.15</p>
+      <p><button class="shop-item-button">Add to Cart</button></p>
     </div>
   </div>
 
   <script>
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    /* Loop through all dropdown buttons to toggle between hiding and
+    showing its dropdown content - This allows the user to have multiple
+    dropdowns without any conflict */
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
 
