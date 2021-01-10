@@ -149,8 +149,7 @@ var btnPay = document.querySelector('.button-pay'),
 
 const form = document.querySelector('form');
 
-form.onsubmit = function(e) {
-    console.log(typeCard.properties.creditCardType);
+btnPay.addEventListener('click', function(e) {
     if (cardName.value === ""){
         cardName.classList.add('box-error');
         document.querySelector('.error-name').classList.remove('hidden');
@@ -203,7 +202,20 @@ form.onsubmit = function(e) {
         document.querySelector('.error-terms').classList.add('hidden');
     }
 
-};
+    if (terms.checked && !(amountDonate.value === "RM ") && (typeCvv.properties.maxLength === cvv.value.length )
+        && (typeDate.properties.maxLength === date.value.length - 1)
+        && !(!(typeCard.properties.maxLength === credNum.value.length - (typeCard.properties.blocks.length - 1))
+            || typeCard.properties.creditCardType === "unknown") && !(cardName.value === "")) {
+        document.querySelector(".popup").classList.remove('hidden');
+        document.querySelector(".black-screen").classList.remove('hidden');
+        setTimeout(function() {
+        document.querySelector(".black-screen").classList.remove('visuallyhidden');
+            document.querySelector(".popup").classList.remove('visuallyhidden');
+        }, 20);
+    }
+
+
+});
 
 // Transition between select payment method
 
@@ -254,6 +266,19 @@ btn2.addEventListener('click', function() {
     });
 
 }, false);
+
+btnCont = document.querySelector(".continue");
+
+btnCont.addEventListener('click', function() {
+    setTimeout(function () {
+        cardName.value = "";
+        credNum.value = "";
+        date.value = "";
+        cvv.value = "";
+        amountDonate.value = "";
+        window.location = "../donation.html";
+    }, 20);
+});
 
 
 btnBack.addEventListener('click', function(e) {

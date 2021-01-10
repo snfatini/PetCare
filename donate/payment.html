@@ -7,42 +7,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/payment.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <img src="../img/logo.png" alt="">
                 <h1>PetCare</h1>
             </div>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="info.html">Info</a>
-                <a href="petshop.html">PetShop</a>
-                <a class="active" href="donation.html">Donate</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="../home.html">Home</a>
+                <a href="../info.html">Info</a>
+                <a href="../petshop.html">PetShop</a>
+                <a class="active" href="../donation.html">Donate</a>
+                <a href="../contact.html">Contact Us</a>
             </nav>
         </div>
     </header>
     <main>
         <h1 class="title">Payment</h1>
         <div class="main-content">
-            <img class="left-image" src="img/payment/cat2.jpg" alt="">
+            <img class="left-image" src="../img/payment/cat2.jpg" alt="">
             <div class="right">
 
                 <div id="mainsub">
                     <p id="right-title">Select payment method:</p>
                     <button type="button" class="payment" id="creditdebit">
-                        <img src="img/payment/visa.png" alt="" width="100%">
-                        <img src="img/payment/mastercard.png" alt="" width="100%">
+                        <img src="../img/payment/visa.png" alt="" width="100%">
+                        <img src="../img/payment/mastercard.png" alt="" width="100%">
                         <p>Credit/Debit Card</p>
                     </button>
 
                     <button type="button" class="payment" id="mypaypal">
-                        <img src="img/payment/paypal.png" alt="" width="100%">
+                        <img src="../img/payment/paypal.png" alt="" width="100%">
                         <p>PayPal</p>
                     </button>
                 </div>
@@ -51,9 +51,9 @@
                 <form id="cdcontent" class="hidden visuallyhidden">
 
                             <p>Payment information:</p>
-                            <input class="input-name fill-required" type="text" placeholder="Your name on card">
+                            <input class="input-name fill-required" type="text" name="nameCard" placeholder="Your name on card">
                             <p class="error error-name hidden" id="error">*Please enter your name</p>
-                            <input class="input-card-number fill-required" placeholder="Enter credit/debit card number" type="tel">
+                            <input class="input-card-number fill-required" name="numOnCard" placeholder="Enter credit/debit card number" type="tel">
 
                             <p class="error error-cardnum hidden" id="error">*Please enter your credit/debit card number</p>
                             <i class="fa fa-cc-visa"></i>
@@ -62,27 +62,34 @@
                             <i class="fa fa-cc-jcb"></i>
                             <i class="fa fa-cc-discover"></i>
 
-                            <input class="input-date fill-required" type="text" placeholder="MM/YY">
+                            <input class="input-date fill-required" name="expDateOnCard" type="text" placeholder="MM/YY">
                             <p class="error error-date hidden" id="error2">*Please enter valid expiry date</p>
-                            <input class="input-cvv fill-required" type="text" placeholder="CVV">
+                            <input class="input-cvv fill-required" name="cvvOnCard" type="text" placeholder="CVV">
                             <p class="error error-cvv hidden" id="error3">*Please enter valid CVV code </p>
                             <div style="clear:both;"></div>
 
                             <p>Name your price</p>
-                            <input class="donate-amount" type="text" placeholder="Enter amount">
+                            <input class="donate-amount" name="amountMoney" type="text" placeholder="Enter amount">
                             <p class="error error-donate hidden" id="error4">*Please enter valid amount to donate </p>
                             <br>
-                            <button class="button-pay" type="submit">PAY</button>
+                            <button class="button-pay" type="button">PAY</button>
                             <br>
                             <label class="checkbox-wrapper">
                                 <input type="checkbox" name="checkbox">
                                 <span class="checkmark"></span>
                             </label>
                             <div class="terms">
-                                <p>I agree to <a href="tnc.html">terms and condition</a> and <a href="#">privacy policy</a></p>
+                                <p>I agree to <a href="../tnc.html">terms and condition</a> and <a href="../privacy.html">privacy policy</a></p>
                             </div>
 
                             <p class="error error-terms hidden" id="error5">*Please tick this box to continue with the donation. </p>
+
+                            <div class="black-screen hidden visuallyhidden">
+                                <div class="popup hidden visuallyhidden">
+                                    <p>Thank you for your donation!</p>
+                                    <button class="continue" type="button" name="button">Continue</button>
+                                </div>
+                            </div>
                 </form>
                 <div id="ppcontent" class="hidden visuallyhidden">
 
@@ -106,7 +113,7 @@
                             Use Credit/Debit card payment method to use MYR currency. <br>
                             Note: "MYR" is a fancy word of "RM" for international
                             <br> <br>
-                            By clicking this button, you are agreed to our <a href="tnc.html">terms and condition</a> and <a href="privacy.html">privacy policy</a>.
+                            By clicking this button, you are agreed to our <a href="../tnc.html">terms and condition</a> and <a href="../privacy.html">privacy policy</a>.
                         </p>
                     </div>
 
@@ -120,8 +127,8 @@
         <div style="clear: both;"></div>
     </footer>
     <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script src="js/cleave.js"> </script>
-    <script src="js/payment.js"> </script>
+    <script src="../js/cleave.js"> </script>
+    <script src="../js/payment.js"> </script>
 </body>
 
 </html>

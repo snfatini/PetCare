@@ -230,9 +230,12 @@ main {
     font-size: 12px;
 }
 
-#cdcontent .terms p a {font-size: inherit;}
+#cdcontent .terms p a {
+    font-size: inherit;
+    color: white;
+}
 
-#cdcontent .terms p a:hover {color: white;}
+#cdcontent .terms p a:hover {color: blue;}
 
 #cdcontent .error{
     position: absolute;
@@ -247,6 +250,49 @@ main {
 #cdcontent #error3{transform: translate(122%, 470%);}
 #cdcontent #error4{transform: translate(36%, -75%);}
 #cdcontent #error5{transform: translate(10%, -40%);}
+
+#cdcontent .black-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    border:1px solid #000;
+    z-index: 1000;
+}
+
+#cdcontent .popup {
+    transition: 0.3s ease;
+    background-color:#3399FF;
+    position: fixed;
+    padding: 20px 40px;
+    top: calc(50% - 50px );
+    right: calc(50% - 200px);
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    z-index: 100;
+}
+#cdcontent .continue {
+    transition: 0.3s ease;
+    margin-top: 20px;
+    font-weight: bolder;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #2C6700;
+    background-color: #92CD00;
+    padding: 10px 70px;
+}
+
+#cdcontent .continue:hover {
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-color: #000;
+    background-color: #2C6700;
+    transform: translateY(-5%);
+}
 
 #ppcontent {
     transition: all 0.5s linear;
