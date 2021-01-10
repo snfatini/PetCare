@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
@@ -38,22 +38,15 @@
       <input type="text" id="name" placeholder="Your name.." maxlength="50"><br><br>
 
       <label for="email">Email</label>
-      <input type="text" id="email" placeholder="Your email.." maxlength="20" width="30" height="20"><br><br>
+      <input type="email" id="email" placeholder="Your email.." maxlength="20" width="30" height="20"><br><br>
 
       <label for="phone">Phone No.</label>
-      <input type="text" id="phone" placeholder="Your number.."><br><br>
+      <input type="text" class="phone-input" id="phone" placeholder="Your number.."><br><br>
 
       <label for="message">Feedback</label>
       <textarea id="subject" name="subject" placeholder="Drop your message here.." style="height:100px"></textarea>
 
-      <button onclick="submitForm()">Submit</button>
-      <script>
-          function submitForm() {
-            alert("Thanks foy your response.\nHave a nice day!");
-            document.contact-form.submit();
-            document.contact-form.reset();
-          }
-      </script>
+      <button>Submit</button>
     </div>
 
     <div class="info">
@@ -80,6 +73,10 @@
         <p id="enquiry">For more enquiry on this matter, <a href="mailto:petshop?subject=feedback">email to us</a></p>
         <div style="clear: both;"></div>
     </footer>
+
+    <script src="js/cleave.js" charset="utf-8"></script>
+        <script src="js/cleave-phone.my.js" charset="utf-8"></script>
+    <script src="js/contact.js" charset="utf-8"></script>
 
 </body>
 </html>
