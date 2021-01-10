@@ -96,12 +96,13 @@ a .btn{
   width: 30%;
   padding: 2%;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   border: 2px solid white;
   border-radius: 10px;
   background-color: rgba(203, 203, 180, 0.6);
   margin-left: 15%;
   margin-bottom: 3%;
+  line-height: 2.0;
 }
 
 #quote{
@@ -110,9 +111,10 @@ a .btn{
   padding: 2%;
   text-align: center;
   font-size: 20px;
-  background-color: grey;
   margin-right: 15%;
-  margin-top: 3%;
+  margin-top: 2.5%;
+  font-family: 'Potta One', cursive;
+  font-weight: bolder;
 }
 
 .column {
@@ -133,7 +135,7 @@ a .btn{
 
 .column .content{
   position: absolute;
-  top:149%;
+  top:161.5%;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
