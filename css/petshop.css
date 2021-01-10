@@ -2,93 +2,6 @@
   border: 1px solid white;
 }*/
 
-.container{
-    width: 90%;
-    margin: 0 auto;
-}
-
-header{
-    width: 100%;
-    position: fixed;
-    background: #3399FF;
-    padding: 0;
-    color: #fff;
-    z-index: 1000;
-    border-style: solid;
-    border-width: 0 0 4px 0;
-}
-
-header{
-    top: 0;
-}
-
-footer{
-    bottom: 0;
-    background: #24478f;
-    color: #fff;
-    padding: 20px;
-}
-
-#copyright {
-    float: left;
-}
-
-#enquiry {
-    float: right;
-}
-
-#enquiry a {
-    color: orange;
-    text-decoration: none;
-}
-
-.logo {
-    margin-top: 10px;
-    margin-left: 3%;
-    float: left;
-}
-
-.logo img {
-    border-radius: 50%;
-    width : 45px;
-    float: left;
-}
-
-.logo h1 {
-    font-size: 30px;
-    padding: 0 10px 5px 50px;
-    color: white;
-}
-nav {
-    float: right;
-}
-
-nav a{
-    margin: 0 -2px;
-    color: #fff;
-    text-decoration: none;
-    padding: 20px 15px;
-    display: inline-block;
-}
-
-
-nav a:hover {
-    background-color: #3366CC;
-    transition: 0.5s ease;
-}
-
-nav a.active {
-    background-color: #333399;
-}
-
-.hidden {
-    display: none;
-}
-
-.visuallyhidden {
-    opacity: 0;
-}
-
 body{
   background-color:#3399FF;
   margin: 0 auto;
@@ -120,7 +33,7 @@ body{
   float: left;
   position: sticky;
   z-index: 1;
-  top: 10px;
+  top: 90px;
   left: 10px;
   background-color: #111;
   overflow-x: hidden;
