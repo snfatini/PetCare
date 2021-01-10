@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/5cfea6fc65.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <style media="screen">
+    html{
+      scroll-behavior: smooth;
+    }
+    .wholeContent{
+      width:80%;
+      margin: 0 auto;
+
+    }
+      body{
+        margin: 0 auto;
+        max-width :none;
+        background-image:
+        linear-gradient(to bottom, rgba(20, 60, 90, 0.4), rgba(0, 0, 0 , 2.0)),
+        url('img/dog5back2.jpg');
+        background-blend-mode: darken;
+        background-size:cover;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .intro ul{
+        list-style-type: none;
+        margin-top:10px;
+        margin-right: 10px;
+      }
+
+      .intro li {
+        float:left;
+        font-size: 20px;
+      }
+      li a {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top:23px;
+        padding-bottom: 18px;
+        font-size: 15px;
+      }
+      .intro nav a:hover{
+        background-color: #3366CC;
+        color:white;
+        transition: 0.4s;
+      }
+      .intro nav{
+        float : right;
+        margin-top:-73px;
+        margin-right: 30px;
+      }
+      .intro nav a {
+        color:white;
+      }
+      .intro{
+        padding-top:10px;
+        height:50px;
+        width:100%;
+        background-color:#3399FE;
+        position:fixed;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .dogInfo{
+        color: black;
+        float:right;
+        border-radius: 25px;
+        width:20%;
+        height:290px;
+        background-color:white;
+        padding: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top:60px;
+        margin-bottom: 20px;
+        font-family: "Courier New",monospace;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      .dogInfo img{
+        width:70px;
+        height:70px;
+        border-radius:50px;
+        float:right;
+        margin:10px;
+        margin-right:20px;
+        margin-top:30px;
+      }
+      .firstContent{
+        padding:20px;
+        width:75%;
+        font-size:20px;
+      }
+      .contact{
+        background-color:#24478F;
+        height:90px;
+        width:100%;
+        padding-bottom: 20px;
+        color:white;
+      }
+      .fotorama{
+        padding:5px;
+        display:block;
+        width:40%;
+        margin:0 auto;
+      }
+      #dogs {
+        text-align:center;
+        font-size:60px;
+        padding-top:40px;
+        font-family:"Brush Script MT", cursive;
+      }
+
+      button{
+        border:none;
+        background-color: #333399;
+        color:white;
+        padding: 10px 20px;
+      }
+      button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: white;
+        color:#555555;
+        transition: 0.3s;
+      }
+      .sidenav{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        float:left;
+        padding:10px;
+        margin-top: 50px;
+        font-size: 20px;
+        background-color: #333399;
+        position:fixed;
+        border-top-right-radius:10px;
+        border-bottom-right-radius: 10px;
+
+      }
+      .sidenav a {
+        text-decoration: none;
+        color:white;
+      }
+      footer{
+        height: 50px;
+        padding-top:10px;
+        background: #24478f;
+        color: #fff;
+        padding-left: 20px;
+        font-size: 14px;
+        padding-right: 20px;
+      }
+      #copyright {
+          float: left;
+      }
+
+      #enquiry {
+          float: right;
+      }
+
+      #enquiry a {
+          color: orange;
+          text-decoration: none;
+      }
+      .intro img{
+        border-radius: 50%;
+        width : 45px;
+        float: left;
+        margin-left: 100px;
+        border-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <img src="img/logo.png" alt="">
+      <h1 style="padding:10px;margin-top:-6px;">PetCare</h1>
+      <nav>
+        <ul>
+          <li> <a href="../home.html">Home</a></li>
+          <li> <a href="../info.html" style="background-color:#333399;color:white;padding:12px;padding-top:23px;padding-bottom:18px;padding-left: 20px;padding-right:20px;font-size:15px;">Info</a></li>
+          <li> <a href="../petshop.html">Pet Shop</a></li>
+          <li> <a href="../donation.html">Donate</a></li>
+          <li> <a href="../contact.html">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <hr style="height:5px; background-color:white;border-width:0px;margin-top:-22px;">
+    </div>
+    <br><br> <br>
+    <div class="sidenav">
+      <nav>
+        <a href="#dogs"> About Dogs</a><br><br>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </div>
+
+    <div class="wholeContent">
+
+    <h1 id="dogs">Dogs</h1>
+
+    <div class="dogInfo">
+      <img src="img/dog pic.jpg" alt="dog pic">
+      <ul style="list-style-type:none;padding:10px;">
+        <li>COMMON NAME: Dog</li><br>
+        <li>SCIENTIFIC NAME: Canis familiaris</li><br>
+        <li>DIET : Omnivore</li><br>
+        <li>TYPE : Mammal</li><br>
+        <li>SIZE : 6 to 33 inches</li><br>
+        <li>WEIGHT :3 to 175 Pounds</li>
+      </ul>
+
+    </div>
+    <div class="firstContent">
+      <p>Dogs were possibly the first tame animals in the world.
+        They've been accompanying people for at least 20,000 years and probably as much as 40,000 years.
+        Scientists typically believe that all dogs, domestic and wild,
+        share a common wolf ancestor based on their colours and behaviour.</p>
+      <p>Dogs are also referred to as "man's best friend" because they blend into human life.
+        Man applies to the human being. Dogs can serve people in a variety of ways. For example, there are guard dogs, hunting dogs, herding dogs, blind guide dogs, and police dogs.
+        There are also dogs trained to smell diseases in the human body or to locate explosives or illicit drugs. These dogs also support the police in airports or in other places.
+        Sniffer dogs are also trained for this function. Dogs were also sent to outer space by the Russians, a hundred years before any human being. The first dog to be sent was called Laika, but she died within a couple of hours.</p>
+      </div>
+
+    <h2 style="padding-left:20px;"><u>Dogs Breed</u></h2>
+    <p style="font-size:20px;padding-left:20px;">Today, humans have bred hundreds of various domestic dog breeds—some of which may never have survived in the wild. Despite their many shapes and sizes, all domestic dogs, from Newfoundland to Pugs, are members of the same species.</p>
+    <p style="font-size:20px;padding-left:20px;">There are at least 800 species of dogs. Dogs whose ancestors were the same breed would still be the same breed: these dogs are either purebred or pure pedigree dogs. Dogs of parents with various races no longer belong to one breed: they are called mutts, mixed-breed dogs, hybrids or mongrels.
+      Any of the most common breeds are sheepdogs, collies, canoes and retrievers.
+      It is becoming popular to breed two separate breeds of dogs together, and to give the new dog's breed a name that is a combination of the parents' two names.
+      A puppy with a paddle and a pomeranian as a parent could be called a pomapoo. These kinds of breeds, instead of being called mutts, are known as dog breed builders.
+      These dogs are typically used for prize competitions and designer shows. They may be guide dogs.</p>
+      <br>
+    <h2 style="padding-left:20px;"><u>Communication</u></h2>
+    <p style="font-size:20px;padding-left:20px;">Dogs interact in a variety of ways. Scent is one method, the other is physical presence.
+      Place, movement, and facial expression of the body also send a clear meaning.
+      Many of these signs are often familiar to people, such as the delighted tail-wagging of a joyful dog or the bared teeth of an angry or endangered species.
+      Vocally, dogs interact in a cacophony of noises, including barks, growls and wines.</p>
+    <br><br><br>
+    <h1 id="gallery" style="text-align:center;">Gallery</h1> <br><br><br>
+    <div class="fotorama" data-loop="true" data-nav="thumbs" >
+      <img src="img/dog.jpeg" >
+      <img src="img/dos2.jpg">
+      <img src="img/puppy.jpg">
+      <img src="img/dog3.jpg">
+      <img src="img/dog4.jpg">
+      <img src="img/dog5.jpg">
+      <img src="img/dog6.jpg">
+      <img src="img/dog7.jpg">
+    </div>
+    <br><br>
+    <button type="button" name="nav cat" onclick="document.location='cats.html'"> Read about cats</button>
+    <button type="button" name="nav cat" onclick="document.location='hamster.html'" style="float:right;"> Read about hamster</button>
+  </div>
+    <br><br><br>
+    <hr style="height:3px;background-color:white;margin-bottom:0px;">
+    <footer>
+        <p id="copyright">&copy; Copyright 2021. All rights reserved.</p>
+        <p id="enquiry">For more enquiry on this matter, <a href="mailto:petshop?subject=feedback">email to us</a></p>
+        <div style="clear: both;"></div>
+    </footer>
+
+  </body>
+</html>
