@@ -1,0 +1,96 @@
+/** {
+  border: 1px solid black;
+}*/
+
+body  {
+  margin: 0 auto;
+  background-color: #3399FF;
+  background-image: linear-gradient(rgba(51,153,255,0.6), rgba(51,153,255,1.0)), url(../img/contact/background.jpg);
+}
+
+form {
+  width:40%;
+  height: 160%;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  padding:40px 20px 40px 20px;
+  background-color:lightblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 20px;
+  text-align: center;
+}
+
+form input {
+  padding : 10px;
+  float:right;
+  margin: 5px;
+  width: 60%;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form textarea {
+  width: 60%;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  float: left;
+  width: 30%;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+button {
+  float:right;
+  background-color:grey;
+  margin: 10px;
+  background-color: #333399;
+  color: white;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: black;
+}
+
+button:hover {
+  background-color: #3366CC;
+}
+
+.info {
+  margin-top: 70px;
+  margin-bottom: 25%;
+}
+
+.contactinfo {
+  float: left;
+  width: 40%;
+  line-height: 2.0;
+  text-align: left;
+  margin-left: 50px;
+}
+
+p {
+  float: right;
+  margin: 5px;
+}
+
+.socialmedia {
+  float: right;
+  width: 40%;
+  line-height: 2.0;
+  text-align: left;
+  margin-left: 50px;
+}
