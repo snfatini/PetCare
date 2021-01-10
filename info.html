@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Info | PetCare</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <style media="screen">
+      .content1{
+        width:80%;
+        margin: 0 auto;
+        padding:40px 20px 40px 20px;
+        background-color:turquoise;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        margin-bottom:100px;
+        margin-top:50px;
+        border-radius: 25px;
+      }
+      .content2{
+        width:80%;
+        margin: 0 auto;
+        padding:40px 20px 80px 20px;
+        background-color:turquoise;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        margin-bottom:100px;
+        border-radius: 25px;
+      }
+      .content3{
+        width:80%;
+        margin: 0 auto;
+        padding:40px 20px 60px 20px;
+        background-color:turquoise;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 25px;
+      }
+      body{
+        background-color: #0180fe;
+        margin: 0 auto;
+        max-width :none;
+
+      }
+
+      .title{
+        background-image:url(info/img/pets.jpg);
+        margin-top:55px;
+        background-color: rgba(255,255,255,0.4);
+        background-blend-mode: lighten;
+        background-position: center;
+      }
+      button{
+        border:none;
+        background-color: #555555;
+        color:white;
+        padding: 10px 30px;
+      }
+      button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: white;
+        color:#555555;
+        transition: 0.3s;
+      }
+      img {
+        border-radius:50px;
+        border: solid;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <h1 style="font-family: 'Open Sans', sans-serif;">PetCare</h1>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="info.html" class="active">Info</a>
+                <a href="petshop.html">PetShop</a>
+                <a href="donation.html">Donate</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <hr style = "background-color:black;border-width:0px;margin-top:0px;">
+    <div class="title">
+
+      <h1 style="text-align: center;font-size:100px;padding-top:130px;font-family: 'Open Sans', sans-serif">Info</h1><br>
+      <h3 style="text-align: center;font-size:30px;margin-top:-10px;font-family: 'Open Sans', sans-serif">Get to know your pet better!</h3>
+      <hr style = "height:12px;background-color:#0180fe;border-width:0px;margin-top:100px;box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); ">
+
+    </div>
+    <h2 style="width:80%;margin: 0 auto;font-size:40px;font-family: 'Open Sans', sans-serif"><u>About Pet</u></h2>
+    <div class="content1">
+      <img src="info/img/dog.jpeg" alt="dog pic" width="350px" height="250px" style="float:left;margin-left:20px;margin-right:20px;">
+      <p style="font-family: 'Open Sans', sans-serif;padding:50px;">Dogs, like humans, are highly social animals and this similarity in their overall behavioural pattern accounts for their trainability,
+         playfulnes and ability to fit into human households and social situations.The loyalty and devotion that dogs demonstrate as part of their natural instincts as
+         pack animals closely mimics the human idea of love and friendship, leading many dog owners to view their pets as full-fledged family members.
+        Dogs have played a significant part in humans' lives for a long time. It is thought that for thousands of years, dogs have been pets.
+        Dogs are also referred to as The Best Friend of Man. This is because, in so many ways, dogs help men out. </p>
+
+      <button type="button" name="dog" onclick="document.location='info/dogs.html'" style="float:right;margin:30px;margin-top:-10px;">Read More</button>
+    </div>
+
+    <div class="content2">
+      <img src="info/img/cat.jpg" alt="cat pic" width="340" height="240" style="float:right;margin-right:20px;margin-left:20px;">
+      <p style="font-family: 'Open Sans', sans-serif;text-align:right;padding:50px;">Cats are an enigma that have captured the hearts of people for thousands of years.
+        Their mysterious personalities and adorable looks have made them an incredibly popular pet,
+         and according to a survey 18% of households in the UK alone are ruled by a cat.
+         There are so many interesting facts about cats that you probably haven’t heard of, from the world’s largest cat,
+         to the surprising way they walk. Keep reading to find out more.</p>
+
+      <button type="button" name="cat" onclick="document.location='info/cats.html'" style="float:right;margin:20px;margin-top:-20px;">Read More</button>
+    </div>
+    <div class="content3">
+      <img src="info/img/hamster.jpg" alt="hamster pic" width="350px" height="250px" style="float:left;margin-left:20px;margin-right:20px;">
+      <p style="font-family: 'Open Sans', sans-serif;text-align:left;padding:30px;">Hamsters are nocturnal, according to the ASPCA (American Society for the Prevention of Cruelty to Animals), which means they prefer to sleep during the day.
+         They dig burrows in the wild, which are a network of tunnels, to live and breed in. Hamsters are also going to store food in their burrows.
+         Living underground keeps wild hamsters cool in hot weather.
+         Some hamsters are very friendly, while others are lonely. The Syrian hamster, for example, doesn't like living with other hamsters.
+         They are very territorial and should never be housed in a cage with other hamsters.
+         It's going to bite the other hamster, and maybe even kill it. Dwarf hamsters, on the other hand, are friendly and like to have a mate in the vicinity.
+         Wild hamsters will hibernate if the weather is cold enough. Hamsters are going to wake up from hibernation regularly to feed.
+         If there is not enough food to store, the hamsters will wait to hibernate until their surplus is to their taste.</p>
+
+      <button type="button" name="hamster" onclick="document.location='info/hamster.html'" style="float:right;margin:20px;margin-top:-10px;">Read More</button>
+    </div>
+
+    <br><br><br><br><br>
+    <hr style="height:3px;background-color:white;margin-bottom:0px;">
+    <footer>
+        <p id="copyright">&copy; Copyright 2021. All rights reserved.</p>
+        <p id="enquiry">For more enquiry on this matter, <a href="mailto:petshop?subject=feedback">email to us</a></p>
+        <div style="clear: both;"></div>
+    </footer>
+
+
+  </body>
+</html>
